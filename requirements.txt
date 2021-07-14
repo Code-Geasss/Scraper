@@ -8,7 +8,6 @@ cryptography==2.8
 dbus-python==1.2.16
 entrypoints==0.3
 Flask==2.0.1
-gpg===1.13.1-unknown
 html5lib==1.0.1
 httplib2==0.14.0
 idna==2.8
