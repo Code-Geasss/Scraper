@@ -43,4 +43,4 @@ def index(title):
 
 
 if __name__ == "__main__":
-    app.run(process.env.PORT || 3000, debug=True)
+    app.run(process.env.PORT, debug=True)
