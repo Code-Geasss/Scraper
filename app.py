@@ -26,6 +26,8 @@ def index(title):
     search = title
     URL = url+search
     driver.get(URL)
+    
+    print(title)
 
     soup = BeautifulSoup(driver.page_source, "lxml")
     price = soup.find("span",attrs={"class":'a-price-whole'}) # to get the price
