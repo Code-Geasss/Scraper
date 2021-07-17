@@ -30,13 +30,9 @@ def index(title):
     soup = BeautifulSoup(driver.page_source, "lxml")
     price = soup.find("span",attrs={"class":'a-price-whole'}) # to get the price
     symbol = soup.find("span",attrs={"class":'a-price-symbol'}) #to check if it is $ or INR
-    symbol = symbol.text
     priceINR = price.text
     print(priceINR)
 
-    if(symbol == '$'):
-        val = int(float(priceINR))
-        priceINR = int(float(val*74))
 
     print(priceINR)
     return str(priceINR)
